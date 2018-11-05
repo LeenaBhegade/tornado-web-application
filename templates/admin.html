@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Word Cloud Fuzzer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ static_url('css/style.css') }}"/>
+    </head>
+    <body>
+    	<div class="content container admin">
+        	<h1>Welcome to Admin page</h1>
+			{% for word in words %}
+	        <div class="col-xs-12 word-object">
+	        	<div class="col-xs-4 word">
+	        	<p> {{ word["word"] }} </p>
+		        </div>
+		        <div class="col-xs-2 count">
+		        	<p>  {{ word["count"] }} </p>
+		        </div>
+	        </div>
+	        {% end %}   
+    	</div>
+    </body>
+</html>

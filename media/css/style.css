@@ -1,0 +1,38 @@
+form {
+    margin-top: 2em;
+}
+
+.word-object {
+	padding: 5px;
+	margin: 5px;
+}
+
+.admin h1 {
+	padding: 5px;
+	margin: 10px;
+	border-bottom: 3px solid #95b4d4;
+	text-align: center;
+}
+
+.word, .count{
+	border-bottom: 1px solid #f1eaea;
+}
+
+svg {
+	display: block;
+	margin: auto
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
