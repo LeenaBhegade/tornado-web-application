@@ -88,11 +88,13 @@ When you get keys for the first time and if keys are not created they will get c
 
 #### .env
 This file is not added to git but please make sure you add the required environment variables in it.Make sure you add below variable in that file
-SALT=xxxxxxxxx
-DATABASE_URL=xxxxxxx
-POSTGRES_PASSWORD=xxx
-POSTGRES_USER=xxx
-POSTGRES_DB=xxx
+```
+SALT=xxxxxxxxx  
+DATABASE_URL=xxxxxxx  
+POSTGRES_PASSWORD=xxx  
+POSTGRES_USER=xxx  
+POSTGRES_DB=xxx  
+```
 
 
 #### app.py
@@ -108,8 +110,10 @@ A place to collect application settings.
 ### To run the application locally using docker-compose
 After git cloning this project make sure you have created a .env file in your root folder and you have added all the necessary environment variables. 
 Run below commands on the terminal in root folder of the project:
-docker-compose build
-docker-compose up
+```
+docker-compose build  
+docker-compose up  
+```
 
 ### To run tests locally
 Make sure you installed pytest locally or in your virtual environment before firing pytest in the root folder of your application. 
