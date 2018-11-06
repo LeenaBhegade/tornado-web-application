@@ -12,7 +12,6 @@ from urls import url_patterns
 class TornadoWebApp(tornado.web.Application):
     def __init__(self):
         database_url = os.environ['DATABASE_URL']
-        print("database_url",database_url)
         tornado.web.Application.__init__(
             self, url_patterns, session_factory=make_session_factory(database_url), **settings)
 
